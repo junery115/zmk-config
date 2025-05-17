@@ -32,7 +32,6 @@
 
    combos {
         compatible = "zmk,combos";
-
         combo_apos {
             timeout-ms = <30>;
             key-positions = <17 18>;
@@ -44,7 +43,60 @@
             key-positions = <7 8>;
             bindings = <&kp MINUS>;
         };
+         combo_esc {
+            timeout-ms = <30>;
+            key-positions = <26 27>;
+            bindings = <&kp ESC>;
+        };
+        combo_del {
+            timeout-ms = <30>;
+            key-positions = <32 33>;
+            bindings = <&kp DEL>;
+        };
+        combo_dqt {
+            timeout-ms = <30>;
+            key-positions = <11 12>;
+            bindings = <&kp DQT>;
+        };
+        combo_pipe {
+            timeout-ms = <30>;
+            key-positions = <21 22>;
+            bindings = <&kp PIPE>;
+        };
+        combo_bslh {
+            timeout-ms = <30>;
+            key-positions = <27 28>;
+            bindings = <&kp BSLH>;
+        };
+        combo_tilde {
+            timeout-ms = <30>;
+            key-positions = <5 6>;
+            bindings = <&kp TILDE>;
+        };
+        combo_grave {
+            timeout-ms = <30>;
+            key-positions = <2 3>;
+            bindings = <&kp GRAVE>;
+        };
+        combo_under {
+            timeout-ms = <30>;
+            key-positions = <1 2>;
+            bindings = <&kp UNDER>;
+        };
+        
+        combo_plus {
+            timeout-ms = <30>;
+            key-positions = <12 13>;
+            bindings = <&kp PLUS>;
+        };
+        combo_equal {
+            timeout-ms = <30>;
+            key-positions = <16 17>;
+            bindings = <&kp EQUAL>;
+        };
+
     };
+ 
 
 
     keymap {
