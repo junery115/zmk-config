@@ -70,7 +70,7 @@
         };
         combo_tilde {
             timeout-ms = <30>;
-            key-positions = <5 6>;
+            key-positions = <6 7>;
             bindings = <&kp TILDE>;
         };
         combo_grave {
