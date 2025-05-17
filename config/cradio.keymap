@@ -35,13 +35,13 @@
 
         combo_apos {
             timeout-ms = <30>;
-            key-positions = <&e_key &i_key>;
+            key-positions = <24, 25>;
             bindings = <&kp APOS>;
         };
 
         combo_dash {
             timeout-ms = <30>;
-            key-positions = <&u_key &y_key>;
+            key-positions = <19 20>;
             bindings = <&kp MINUS>;
         };
     };
