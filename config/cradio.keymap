@@ -30,6 +30,23 @@
         };
     };
 
+   combos {
+        compatible = "zmk,combos";
+
+        combo_apos {
+            timeout-ms = <30>;
+            key-positions = <&e_key &i_key>;
+            bindings = <&kp APOS>;
+        };
+
+        combo_dash {
+            timeout-ms = <30>;
+            key-positions = <&u_key &y_key>;
+            bindings = <&kp MINUS>;
+        };
+    };
+
+
     keymap {
         compatible = "zmk,keymap";
         default_layer {
