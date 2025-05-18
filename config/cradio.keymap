@@ -104,11 +104,7 @@
             bindings = <&kp EQUAL>;
         };
 
-    combo_nav {
-            timeout-ms = <30>;
-            key-positions = <16 17>;
-            bindings = <&lt NAV>;
-        };
+   
 
     };
  
