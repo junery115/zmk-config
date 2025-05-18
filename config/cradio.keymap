@@ -169,7 +169,7 @@
         //│          │  [       │  {       │  }       │          │   │PROFILE 0 │PROFILE 1 │PROFILE 2 │PROFILE 3 │PROFILE 3 │
             &trans     &kp LBKT   &kp LBRC   &kp RBRC   &trans       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  !       │  @       │  #       │  $       │  %       │   │  *       │  ⬅      │  ⬇       │  ⬆       │    ⮕    │
+        //│  !       │  @       │  #       │  $       │  %       │   │  *       │  LEFT    │    DOWN  │    UP    │ RIGHT    │
             &kp EXCL   &kp AT     &kp HASH   &kp DLLR   &kp PRCNT      &kp ASTRK  &kp LEFT    &kp DOWN  &kp UP   &kp RIGHT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │ CLEAR BT │          │          │          │          │
