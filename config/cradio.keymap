@@ -16,8 +16,8 @@
 // ─────────────────────────────────────────────────────────────
 // Home Row Mod Macros
 // ─────────────────────────────────────────────────────────────
-#define HRML(k1, k2, k3, k4) &pinky_mod LGUI  k1  &ring_mod LALT  k2  &middle_mod LCTRL  k3  &index_mod LSHFT  k4
-#define HRMR(k1, k2, k3, k4) &index_mod RSHFT k1  &middle_mod RCTRL k2  &ring_mod RALT   k3  &pinky_mod RGUI   k4
+#define HRML(k1, k2, k3, k4) &pinky_mod LGUI &kp k1 &ring_mod LALT &kp k2 &middle_mod LCTRL &kp k3 &index_mod LSHFT &kp k4
+#define HRMR(k1, k2, k3, k4) &index_mod RSHFT &kp k1 &middle_mod RCTRL &kp k2 &ring_mod RALT &kp k3 &pinky_mod RGUI &kp k4
 
 / {
   // ───────────────────────────────────────────────────────────
