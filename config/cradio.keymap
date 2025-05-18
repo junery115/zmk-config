@@ -64,7 +64,7 @@
   // ───────────────────────────────────────────────────────────
   keymap {
     compatible = "zmk,keymap";
-    default_layer = DEF;
+    default-layer = DEF;
 
     // ╭───────────────────────────────╮
     // │ Default Layer                │
