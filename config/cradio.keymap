@@ -212,7 +212,7 @@
               &trans   &trans     &kp LPAR   &kp RPAR     &trans        &trans     &trans     &trans     &trans      &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │    [     │    ]     │          │   │          │          │          │          │          │
-            &trans     &trans     &kp LBKT   &bt RPKT    &trans        &trans     &trans     &trans     &trans     &trans
+            &trans     &trans     &kp LBKT   &bt RBKT    &trans        &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
