@@ -16,8 +16,8 @@
 // ─────────────────────────────────────────────────────────────
 // Home Row Mod Macros
 // ─────────────────────────────────────────────────────────────
-#define HRML(k1, k2, k3, k4) &pinky_mod LGUI &kp k1 &ring_mod LALT &kp k2 &middle_mod LCTRL &kp k3 &index_mod LSHFT &kp k4
-#define HRMR(k1, k2, k3, k4) &index_mod RSHFT &kp k1 &middle_mod RCTRL &kp k2 &ring_mod RALT &kp k3 &pinky_mod RGUI &kp k4
+#define HRML(k1, k2, k3, k4) &gui LGUI &kp k1 &ht LALT &kp k2 &ht LCTRL &kp k3 &ht LSHFT &kp k4
+#define HRMR(k1, k2, k3, k4) &ht RSHFT &kp k1 &ht RCTRL &kp k2 &ht RALT &kp k3 &gui RGUI &kp k4
 
 / {
   // ───────────────────────────────────────────────────────────
@@ -34,7 +34,16 @@
     bindings = <&kp>, <&kp>;
   };
 
- 
+      gui: homerow_mods_gui {
+        compatible = "zmk,behavior-hold-tap";
+          label = "HOMEROW_MODS_GUI";
+          #binding-cells = <2>;
+          tapping-term-ms = <350>;
+          flavor = "tap-preferred";
+          bindings = <&kp>, <&kp>;
+      };
+
+
   };
 
  
