@@ -16,8 +16,8 @@
 // ─────────────────────────────────────────────────────────────
 // Home Row Mod Macros
 // ─────────────────────────────────────────────────────────────
-#define HRML(k1, k2, k3, k4) &ht LGUI  k1  &ht LALT  k2  &ht LCTRL  k3  &ht LSHFT  k4
-#define HRMR(k1, k2, k3, k4) &ht RSHFT k1  &ht RCTRL k2  &ht RALT   k3  &ht RGUI   k4
+#define HRML(k1, k2, k3, k4) &pinky_mod LGUI  k1  &ring_mod LALT  k2  &middle_mod LCTRL  k3  &index_mod LSHFT  k4
+#define HRMR(k1, k2, k3, k4) &index_mod RSHFT k1  &middle_mod RCTRL k2  &ring_mod RALT   k3  &pinky_mod RGUI   k4
 
 / {
   // ───────────────────────────────────────────────────────────
@@ -33,6 +33,38 @@
       require-prior-idle-ms = <100>;
       bindings = <&kp>, <&kp>;
     };
+  pinky_mod: ht_pinky {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HT_PINKY";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <300>;
+    };
+
+    ring_mod: ht_ring {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HT_RING";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <250>;
+    };
+
+    middle_mod: ht_middle {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HT_MIDDLE";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <225>;
+    };
+
+    index_mod: ht_index {
+      compatible = "zmk,behavior-hold-tap";
+      label = "HT_INDEX";
+      #binding-cells = <2>;
+      flavor = "hold-preferred";
+      tapping-term-ms = <200>;
+    };
+
   };
 
  
