@@ -54,7 +54,7 @@
     combo_under { timeout-ms = <30>; key-positions = <1 2>;   bindings = <&kp UNDER>;  };
     combo_plus  { timeout-ms = <30>; key-positions = <12 13>; bindings = <&kp PLUS>;   };
     combo_equal { timeout-ms = <30>; key-positions = <16 17>; bindings = <&kp EQUAL>;  };
-    combo_nav { timeout-ms = <30>; key-positions = <22 23>; bindings = <&lt NAV>;  };
+    combo_nav   { timeout-ms = <30>; key-positions = <22 23>; bindings = <&to NAV>;  };
   };
 
   // ───────────────────────────────────────────────────────────
