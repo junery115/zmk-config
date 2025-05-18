@@ -34,42 +34,7 @@
     bindings = <&kp>, <&kp>;
   };
 
-  pinky_mod: ht_pinky {
-    compatible = "zmk,behavior-hold-tap";
-    label = "HT_PINKY";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <300>;
-    bindings = <&kp>, <&kp>;
-  };
-
-  ring_mod: ht_ring {
-    compatible = "zmk,behavior-hold-tap";
-    label = "HT_RING";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <250>;
-    bindings = <&kp>, <&kp>;
-  };
-
-  middle_mod: ht_middle {
-    compatible = "zmk,behavior-hold-tap";
-    label = "HT_MIDDLE";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <225>;
-    bindings = <&kp>, <&kp>;
-  };
-
-  index_mod: ht_index {
-    compatible = "zmk,behavior-hold-tap";
-    label = "HT_INDEX";
-    #binding-cells = <2>;
-    flavor = "hold-preferred";
-    tapping-term-ms = <200>;
-    bindings = <&kp>, <&kp>;
-  };
-
+ 
   };
 
  
