@@ -19,6 +19,10 @@
 #define HRML(k1, k2, k3, k4) &gui LGUI  k1 &ring_mod LALT k2 &middle_mod LCTRL  k3 &index_mod LSHFT k4
 #define HRMR(k1, k2, k3, k4) &index_mod RSHFT  k1 &middle_mod RCTRL k2 &ring_mod RALT  k3 &gui RGUI k4
 
+#define HM_TAPPING_TERM 300
+#define HM_TAPPING_TERM_FAST 200
+#define HM_PRIOR_IDLE 150
+
 / {
   // ───────────────────────────────────────────────────────────
   // Behaviors
@@ -38,9 +42,17 @@
         compatible = "zmk,behavior-hold-tap";
           label = "HOMEROW_MODS_GUI";
           #binding-cells = <2>;
-          tapping-term-ms = <300>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
+          bindings = <&kp>, <&kp>; 
+
+
+            flavor = "balanced";
+            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+            hold-trigger-key-positions = <KEYS_R KEYS_T>;
+            hold-trigger-on-release;
+
       };
 
       ring_mod: ht_ring {
