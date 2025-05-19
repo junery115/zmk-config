@@ -1,10 +1,13 @@
 // Copyright (c) 2022 The ZMK Contributors
 // SPDX-License-Identifier: MIT
-#include "keypos_34keys.h"
+#include "includes/keypos_34keys.h"
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+
+// My imports
+#include "includes/behaviours_homerow_mods.dtsi"
 
 #define DEF  0
 #define SYM  1
@@ -23,8 +26,8 @@
 // ─────────────────────────────────────────────────────────────
 // Home Row Mod Macros
 // ─────────────────────────────────────────────────────────────
-#define HRML(k1, k2, k3, k4) &gui LGUI  k1 &ring_mod LALT k2 &middle_mod LCTRL  k3 &index_mod LSHFT k4
-#define HRMR(k1, k2, k3, k4) &index_mod RSHFT  k1 &middle_mod RCTRL k2 &ring_mod RALT  k3 &gui RGUI k4
+#define HRML(k1, k2, k3, k4) &hm_l LGUI  k1 &hm_l LALT k2 &hm_l LCTRL  k3 &hm_shift_l LSHFT k4
+#define HRMR(k1, k2, k3, k4) &hm_shift_r RSHFT  k1 &hm_r RCTRL k2 &hm_r RALT  k3 &hm_r RGUI k4
 
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 200
@@ -45,51 +48,10 @@
     bindings = <&kp>, <&kp>;
   };
 
-      gui: homerow_mods_gui {
-        compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS_GUI";
-          #binding-cells = <2>;
-          bindings = <&kp>, <&kp>; 
+      
 
 
-            flavor = "balanced";
-            tapping-term-ms = <HM_TAPPING_TERM_FAST>;
-            quick-tap-ms = <175>;
-            require-prior-idle-ms = <HM_PRIOR_IDLE>;
-
-            hold-trigger-key-positions = <KEYS_R KEYS_T>;
-            hold-trigger-on-release;
-
-      };
-
-      ring_mod: ht_ring {
-        compatible = "zmk,behavior-hold-tap";
-          label = "HT_RING";
-          #binding-cells = <2>;
-          tapping-term-ms = <250>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-      };
-
-     middle_mod: ht_middle {
-        compatible = "zmk,behavior-hold-tap";
-          label = "HT_MIDDLE";
-          #binding-cells = <2>;
-          tapping-term-ms = <225>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-      };
-
-      index_mod: ht_index {
-        compatible = "zmk,behavior-hold-tap";
-          label = "HT_INDEX";
-          #binding-cells = <2>;
-          tapping-term-ms = <175>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-      };
-
-
+  
   };
 
  
