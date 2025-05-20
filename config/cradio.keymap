@@ -26,8 +26,8 @@
 // ─────────────────────────────────────────────────────────────
 // Home Row Mod Macros
 // ─────────────────────────────────────────────────────────────
-#define HRML(k1, k2, k3, k4) &hm_l LGUI  k1 &hm_l LALT k2 &hm_l LCTRL  k3 &hm_shift_l LSHFT k4
-#define HRMR(k1, k2, k3, k4) &hm_shift_r RSHFT  k1 &hm_r RCTRL k2 &hm_r RALT  k3 &hm_r RGUI k4
+#define HRML(k1, k2, k3, k4) &gui LGUI  k1 &ring_mod LALT k2 &middle_mod LCTRL  k3 &index_mod LSHFT k4
+#define HRMR(k1, k2, k3, k4) &index_mod RSHFT  k1 &middle_mod RCTRL k2 &ring_mod RALT  k3 &gui RGUI k4
 
 #define HM_TAPPING_TERM 300
 #define HM_TAPPING_TERM_FAST 200
