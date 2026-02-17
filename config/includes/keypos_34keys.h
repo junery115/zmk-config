@@ -15,7 +15,7 @@
 #define LT3  1
 #define LT4  0
 
-#define RT0  5  // right-top row
+#define RT0  5  // right-top row 
 #define RT1  6
 #define RT2  7
 #define RT3  8
@@ -49,4 +49,5 @@
 #define LH1 30
 
 #define RH0 32  // right thumb keys
+
 #define RH1 33
